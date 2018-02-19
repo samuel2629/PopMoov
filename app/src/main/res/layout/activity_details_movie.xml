@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:contentDescription="@string/posterimage_detailactivity"
+            android:layout_margin="16dp"
+            android:id="@+id/ivDetailActivity"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.silho.ideo.popmoov.ui.DetailsMovieActivity">
+
+            <TextView
+                style="@style/DetailActivityLabel"
+                android:text="@string/original_title"/>
+            <TextView
+                android:id="@+id/titleTv"
+                style="@style/DetailActivityTextView"
+                tools:text="The Dark Knight Rises"/>
+
+            <TextView
+                style="@style/DetailActivityLabel"
+                android:text="@string/release_date"/>
+            <TextView
+                android:id="@+id/releaseDateTv"
+                style="@style/DetailActivityTextView"
+                tools:text="12.08.09"/>
+
+            <TextView
+                style="@style/DetailActivityLabel"
+                android:text="@string/users_rating"/>
+            <TextView
+                android:id="@+id/userRatingTv"
+                style="@style/DetailActivityTextView"
+                tools:text="4.23/5"/>
+
+            <Button
+                android:id="@+id/markAsFavoriteBtn"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/mark_as_favorite"
+                android:textColor="#ffffffff"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <TextView
+            style="@style/DetailActivityLabel"
+            android:gravity="start"
+            android:text="@string/synopsis"/>
+        <TextView
+            android:id="@+id/synopsisTv"
+            style="@style/DetailActivityTextView"
+            tools:text="The Dark Knight Rise is a film based on most epic adventure of batman the superhero."/>
+
+        <TextView
+            android:gravity="start"
+            android:id="@+id/trailerLabelTv"
+            style="@style/DetailActivityLabel"
+            android:text="@string/trailers"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/DetailActivityLabel"
+            android:gravity="start"
+            android:id="@+id/reviewLabelTv"
+            android:text="@string/reviews"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

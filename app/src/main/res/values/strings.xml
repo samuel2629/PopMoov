@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PopMoov</string>
+    <string name="popular_movies">See Popular Movies</string>
+    <string name="no_connection">You\'re not connected to the internet, please check your connection</string>
+    <string name="no_results">There is no results</string>
+    <string name="call_problem">Something went wrong please retry !</string>
+    <string name="top_rated_movies">See Top Rated Movies</string>
+    <string name="original_title">Original Title :</string>
+    <string name="synopsis">Synopsis :</string>
+    <string name="release_date">Release Date :</string>
+    <string name="users_rating">Users Rating :</string>
+    <string name="posterimage_detailactivity">posterImageDetailActivity</string>
+    <string name="poster_mainactivity">posterMainActivity</string>
+    <string name="mark_as_favorite">Mark As Favorite</string>
+    <string name="trailers">Trailers :</string>
+    <string name="reviews">Reviews :</string>
+    <string name="see_favorite_movies">See Favorite Movies</string>
+    <string name="preference_file_key">preferenceFile</string>
+    <string name="isTopRated">topRated</string>
+    <string name="isPopular">poularMovies</string>
+    <string name="unmark_as_fav">Unmark As Favorite</string>
+</resources>
